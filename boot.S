@@ -32,3 +32,6 @@ start:
     cli
     hlt
     jmp .halt
+
+/* Mark stack as non-executable for security */
+.section .note.GNU-stack, "", @progbits
